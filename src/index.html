@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Resto</title>
+    <script type="module" src="js/resto.js"></script>
+    <style>
+      @import url("scss/resto.scss");
+    </style>
+  </head>
+  <body>
+    <nav id="secondNav" class="navbar navbar-expand-lg bg-dark navbar-dark pb-3 fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our Location</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reservation</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="email" placeholder="Email" aria-label="User ID" />
+            <input class="form-control me-2" type="password" placeholder="password" aria-label="Password" />
+            <button id="searchBtn" class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div id="jumbo" class="container-fluid justify-content-center bg-dark mt-4">
+      <div id="carouselExampleDark" class="carousel slide pt-5">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner text-center">
+          <div class="carousel-item active">
+            <img src="img/menu1.jpg" class="img-fluid h-100" alt="..." />
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <img src="img/menu2.jpg" class="img-fluid h-100" alt="..." />
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <img src="img/menu3.jpg" class="img-fluid h-100" alt="..." />
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <img src="img/menu4.jpg" class="img-fluid h-100" alt="..." />
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <img src="img/menu5.jpg" class="img-fluid h-100" alt="..." />
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <img src="img/menu6.jpg" class="img-fluid h-100" alt="..." />
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-dark p-5 w-100">
+      <h1 class="text-white text-center">Top Favorite Menus</h1>
+      <div class="row justify-content-center p-5">
+        <div class="card col-sm-3">
+          <img src="img/menu1.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card col-sm-3">
+          <img src="img/menu1.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card col-sm-3">
+          <img src="img/menu1.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="about"></section>
+    <div id="portfolio">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/menu1.jpg" title="Project Name">
+              <img class="img-fluid" src="img/menu1.jpg" alt="..." />
+              <div class="portfolio-box-caption">
+                <div class="project-category text-white-50">Category</div>
+                <div class="project-name">Project Name</div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/menu1.jpg" title="Project Name">
+              <img class="img-fluid" src="img/menu1.jpg" alt="..." />
+              <div class="portfolio-box-caption">
+                <div class="project-category text-white-50">Category</div>
+                <div class="project-name">Project Name</div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/menu1.jpg" title="Project Name">
+              <img class="img-fluid" src="img/menu1.jpg" alt="..." />
+              <div class="portfolio-box-caption">
+                <div class="project-category text-white-50">Category</div>
+                <div class="project-name">Project Name</div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/menu1.jpg" title="Project Name">
+              <img class="img-fluid" src="img/menu1.jpg" alt="..." />
+              <div class="portfolio-box-caption">
+                <div class="project-category text-white-50">Category</div>
+                <div class="project-name">Project Name</div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/menu1.jpg" title="Project Name">
+              <img class="img-fluid" src="img/menu1.jpg" alt="..." />
+              <div class="portfolio-box-caption">
+                <div class="project-category text-white-50">Category</div>
+                <div class="project-name">Project Name</div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/menu1.jpg" title="Project Name">
+              <img class="img-fluid" src="img/menu1.jpg" alt="..." />
+              <div class="portfolio-box-caption p-3">
+                <div class="project-category text-white-50">Category</div>
+                <div class="project-name">Project Name</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
